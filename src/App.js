@@ -1,3 +1,4 @@
+// import { Component, Fragment } from 'react';
 import { Component } from 'react';
 
 import './App.css';
@@ -39,7 +40,9 @@ class WhoAmI extends Component {
         // console.log(this); 
 
         return (
-            <div>
+            // <div>
+            <>
+            {/* <Fragment> */}
                 {/* <button onClick={() => this.nextYear()}>+++</button> */}
                 <button onClick={this.nextYear}>+++</button>                
                 <h1>My name is {name}, surname - {surname}, 
@@ -50,17 +53,23 @@ class WhoAmI extends Component {
                     <span>Type occupation</span>
                     <input type="text" onChange={(e) => this.commitInputChanges(e, 'some color')}/>
                 </form>
-            </div>
+            {/* <div/> */}
+            </>
+            // </Fragment>                            
         )
     }
 }
 
+// React.Fragment key="233"
+
 function App() {
     return (
+        // <Fragment>
         <div className='App'>
             <WhoAmI name="John" surname="Smith" link="facebook.com" />
             <WhoAmI name="Alex" surname="Shepard" link="reddit.com" />            
         </div>
+        // </Fragment>
     )
 }
 
