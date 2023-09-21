@@ -6,26 +6,26 @@ import './index.css';
 import App from './App';
 // import { Button } from './App';
 // import BootstrapTest from './BootstrapTest';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // const BigButton = styled(Button)`
 //     margin: 0 auto;
 //     width: 245px;
 // `;
 
-// const BigButton = styled(Button)`
-//     margin: 0 auto;
-//     width: 245px;
-//     text-align: center;
-// `;
+const BigButton = styled(Button)`
+    margin: 0 auto;
+    width: 245px;
+    text-align: center;
+`;
 
 ReactDOM.render(
   <React.StrictMode>
     <App/>
     {/* <BigButton>+++</BigButton> */}
-    {/* <BigButton as="a">Sent report</BigButton> */}
+    <BigButton as="a">Send report</BigButton>
     {/* <BootstrapTest/> */}
   </React.StrictMode>,
   document.getElementById('root')
