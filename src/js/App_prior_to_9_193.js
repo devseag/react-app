@@ -1,5 +1,5 @@
 import './app.scss';
-import CustomForm from './Form';
+import CustomForm from '../Form';
 
 function App() {
   return (
